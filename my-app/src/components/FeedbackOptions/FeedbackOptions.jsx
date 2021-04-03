@@ -1,11 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './FeedbackOptions.module.css';
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return options.map(option => {
     return (
-      <button type="button" key={option} onClick={onLeaveFeedback}>
+      <button
+        type="button"
+        key={option}
+        onClick={onLeaveFeedback}
+        className={styles.button}
+      >
         {option}
       </button>
     );
   });
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 export default FeedbackOptions;

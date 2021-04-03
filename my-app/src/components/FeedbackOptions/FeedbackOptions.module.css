@@ -1,0 +1,13 @@
+.button {
+  padding: 15px 15px;
+  border-radius: 10px;
+  background-color: pink;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-color: rgb(218, 122, 122);
+}
+.button:active,
+.button:focus {
+  border-color: rgb(218, 122, 122);
+  outline: transparent;
+}

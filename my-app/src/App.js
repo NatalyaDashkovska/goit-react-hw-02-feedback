@@ -29,7 +29,8 @@ class App extends Component {
     const countPositiveFeedbackPercentage = (
       (this.state.good / countTotalFeedback) *
       100
-    ).toFixed(2);
+    ).toFixed(0);
+
     const options = Object.keys(this.state);
     return (
       <>
